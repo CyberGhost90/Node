@@ -12,13 +12,14 @@ const startServer = async () => {
 
     app.on("error", (error) => {
       console.log(`Server error: ${error.message}`);
+      throw error; // Rethrow the error to be caught by the outer catch block
     });
 
-    app.Listen(process.env.PORT || 8000, () => {
+    app.listen(process.env.PORT || 8000, () => {
       console.log(`Server is running on port ${process.env.PORT}`);
     });
   } catch (error) {
-    console.error(`Failed to start server: ${error.message}`);
+    console.log(`Failed to start server: ${error.message}`);
   }
 };
 

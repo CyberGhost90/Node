@@ -2,10 +2,10 @@
   "name": "intro-to-backend",
   "version": "1.0.0",
   "description": "a tutorial into node js backend",
-  "main": "/backend/src/index.js",
+  "main": "backend/src/index.js",
   "type": "module",
   "scripts": {
-    "start": "node backend/src/index.js",
+    "start": "node backend/src/app.js",
     "dev": "nodemon backend/src/index.js"
   },
   "repository": {
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/CyberGhost90/Node#readme",
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "dotenv": "^17.4.1",
     "express": "^5.2.1",
     "mongoose": "^9.4.1",

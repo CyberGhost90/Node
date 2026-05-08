@@ -1,1 +1,1 @@
-export const DB_NAME="legend10520_db";
+export const DB_NAME="intro-to-backend";
